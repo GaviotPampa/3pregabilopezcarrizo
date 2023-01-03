@@ -55,7 +55,7 @@ const contenedorProductos = document.getElementById("contenedorProductos");
             `
              <div class="estilo-c">
                 <div class=" card img-container">
-                    <img class="fotos-cuadradas11 zoom card-img-top img-fluid py-3"" src="${producto.img}" alt="${producto.marca}">
+                    <img class="fotos-cuadradas11 zoom card-img-top img-fluid " src="${producto.img}" alt="${producto.marca}">
                     <span class="promo">15% de descuento</span>
                 </div>
              
@@ -126,7 +126,7 @@ const eliminarDelCarrito = (id) => {
   actualizarCarrito();
 };
 
-///Función para vaciar todo el carrito por completo:
+///Función para vaciar todo el carrito:
 
 const vaciarCarrito = document.getElementById('vaciarCarrito');
 vaciarCarrito.addEventListener('click', () => {
@@ -134,7 +134,7 @@ vaciarCarrito.addEventListener('click', () => {
   actualizarCarrito();
 });
 
-//Creo una función que me calcule el total del carrito:
+//Funcion para calcular el total del carrito:
 
 const totalCompra = document.getElementById('totalCompra');
 
@@ -148,7 +148,7 @@ const calcularTotalCompra = () => {
 
 
 
-//Mostramos mensaje con el total de la compra
+//Mostrar mensaje con el total de la compra
 
 const total = document.getElementById("total");
 
