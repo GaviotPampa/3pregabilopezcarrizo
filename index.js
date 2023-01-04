@@ -19,25 +19,25 @@ const perfumeGivenchy = new Producto(1, "Perfume Givenchy", "Givenchy", 25000, "
 const perfumeArmani = new Producto(2, "Perfume My Way", "Giorgio Armaani", 27000, "img/perfumemywayarmani.jpg");
 const perfumeKenzo = new Producto(3, "Perfume Kenzo", "Kenzo", 28900, "img/flower_by_kenzo_mujer.jpg");
 const perfumeSarkany = new Producto(4, "Perfume Sarkany", "Sarkany", 31000,"img/perfumesarkany.jpg");
-const perfumeBvlgari = new Producto(4, "Perfume Bvlgari", "Bvlgari", 31000,"img/perfumebvlgari.jpg");
-const perfumeCalvinKlein = new Producto(4, "Perfume Calvin Klein", "Calvin Klein", 31000,"img/calvinkleinwomen.jpg");
+const perfumeBvlgari = new Producto(5, "Perfume Bvlgari", "Bvlgari", 31000,"img/perfumebvlgari.jpg");
+const perfumeCalvinKlein = new Producto(6, "Perfume Calvin Klein", "Calvin Klein", 31000,"img/calvinkleinwomen.jpg");
 
 ///creación de objetos jabones
 
-const jabonesLavanda= new Producto(5, "Jabób de Lavanda","Igoris", 350, "img/jaboneslavanda.jpg");
-const jabonRosa = new Producto(6, "Jabón Roses","Igoris", 350, "img/jabonderosas.jpg");
-const jabonDeGlicerina = new Producto(7, "Jabón de Glicerina", "Igoris", 250,"img/jabondeglicerina.jpg");
-const jabonDeMiel = new Producto(8, "Jabón de Miel de Abejas", "Igoris", 370,"img/jabondemiel.jpg");
-const jabonDeAvena = new Producto(9, "Jabón de Avena", "Igoris", "370","img/jabondeavena.jpg");
-const jabonDeHierbas = new Producto(10, "Jabón de Hierbas", "Igoris", 370,"img/jabondehierbas.jpg"); 
-const jabonIgoris = new Producto(11,"Set de Jabones Pins", "Igoris", 650, "img/minijabones.jpg");
+const jabonesLavanda= new Producto(7, "Jabób de Lavanda","Igoris", 350, "img/jaboneslavanda.jpg");
+const jabonRosa = new Producto(8, "Jabón Roses","Igoris", 350, "img/jabonderosas.jpg");
+const jabonDeGlicerina = new Producto(9, "Jabón de Glicerina", "Igoris", 250,"img/jabondeglicerina.jpg");
+const jabonDeMiel = new Producto(10, "Jabón de Miel de Abejas", "Igoris", 370,"img/jabondemiel.jpg");
+const jabonDeAvena = new Producto(11, "Jabón de Avena", "Igoris", "370","img/jabondeavena.jpg");
+const jabonDeHierbas = new Producto(12, "Jabón de Hierbas", "Igoris", 370,"img/jabondehierbas.jpg"); 
+const jabonIgoris = new Producto(13,"Set de Jabones Pins", "Igoris", 650, "img/minijabones.jpg");
 
 ///creación de objetos jabones
-const esmalteHermesNaranja = new Producto(11,"Esmalte Naranja", "Hermes", 450, "img/esmaltehermesnaranja.jpg");
-const esmalteHermesRojo = new Producto(11,"Esmalte Rojo", "Hermes", 450, "img/esmaltehermesrojo.jpg");
-const esmalteHermesVerde = new Producto(11,"Esmalte Verde", "Hermes", 450, "img/esmaltehermesverde.jpg");
-const esmalteHermesAzul = new Producto(11,"Esmalte Azul", "Hermes", 450, "img/esmaltehermesazul.jpg");
-const esmalteHermes = new Producto(11,"Esmalte Negro", "Hermes", 450, "img/esmaltehermes.jpg");
+const esmalteHermesNaranja = new Producto(14,"Esmalte Naranja", "Hermes", 450, "img/esmaltehermesnaranja.jpg");
+const esmalteHermesRojo = new Producto(15,"Esmalte Rojo", "Hermes", 450, "img/esmaltehermesrojo.jpg");
+const esmalteHermesVerde = new Producto(16,"Esmalte Verde", "Hermes", 450, "img/esmaltehermesverde.jpg");
+const esmalteHermesAzul = new Producto(17,"Esmalte Azul", "Hermes", 450, "img/esmaltehermesazul.jpg");
+const esmalteHermes = new Producto(18,"Esmalte Negro", "Hermes", 450, "img/esmaltehermes.jpg");
 
 
 ///array con los productos del catalago
@@ -45,6 +45,8 @@ const esmalteHermes = new Producto(11,"Esmalte Negro", "Hermes", 450, "img/esmal
 const productos = [perfumeGivenchy, perfumeArmani, perfumeKenzo,perfumeSarkany, perfumeBvlgari, perfumeCalvinKlein, jabonesLavanda, jabonRosa, jabonDeGlicerina,jabonDeMiel, jabonDeAvena, jabonDeHierbas,jabonIgoris,
     esmalteHermesNaranja,  esmalteHermesRojo, esmalteHermesVerde,esmalteHermesAzul,
     esmalteHermes];
+
+    
 
 const contenedorProductos = document.getElementById("contenedorProductos");
 
@@ -62,15 +64,18 @@ const contenedorProductos = document.getElementById("contenedorProductos");
                 <div class="info-container card">
                     <p>${producto.nombre}</p>
                     <strong>${producto.precio}</strong>
-                    <button id= "boton ${producto.id}" class="btn add-cart" > Añadir al carrito</button>
+                    <button id= "boton${producto.id}" class="btn add-cart" > Añadir al carrito</button>
                 </div>
              </div>
             `;
-        contenedorProductos.appendChild(divProducto);
-    /*   const boton = document.getElementById(`boton${producto.id}`);
-       boton.addEventListener('click', () => {
-    agregarAlCarrito(producto.id);
-  }); */
+            contenedorProductos.appendChild(divProducto);
+
+            const boton = document.getElementById(`boton${producto.id}`);
+
+            boton.addEventListener('click', () => {
+            agregarAlCarrito(producto.id);
+         }); 
+
 });
         
   
@@ -85,13 +90,14 @@ const agregarAlCarrito = (id) => {
       carrito.push(producto);
     }
     actualizarCarrito();
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
   };
 
   
 
-//Muestro el carrito de compras modificando el DOM.
-
-const contenedorCarrito = document.getElementById('contenedorCarrito');
+//Muestra el carrito de compras 
+const contenedorCarrito = document.getElementById('contenedorCarrito'); 
 const verCarrito = document.getElementById('verCarrito');
 
 verCarrito.addEventListener('click', actualizarCarrito);
@@ -100,12 +106,12 @@ function actualizarCarrito() {
   let aux = '';
   carrito.forEach((producto) => {
     aux +=  `
-     <div class="card estilo-c">
-        <div class="img-container">
-            <img class="fotos-cuadradas11 zoom" src="${producto.img}" alt="${producto.marca}">
+     <div class="carddos estilo-c">
+        <div >
+            <img class="fotos11dos carddos" src="${producto.img}" alt="${producto.marca}">
         </div>
      
-        <div class="info-container">
+        <div >
             <p> ${producto.nombre}</p>
             <strong>${producto.precio}</strong>
             <button onClick = "eliminarDelCarrito(${producto.id})"  class="add-cart"> Eliminar del carrito</button>
@@ -114,6 +120,7 @@ function actualizarCarrito() {
     `;
  });
 
+ 
   contenedorCarrito.innerHTML = aux;
   calcularTotalCompra();
 }
