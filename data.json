@@ -1,0 +1,9 @@
+[
+    {"nombre": "Lac Purple Rain","marca":"Molli", "precio": 550,"img":"img/esmaltepurple.jpg", "id": 1},
+    {"nombre": "Lac Yoghurt","marca":"Molli", "precio": 550,"img":"img/esmaltecuatro.jpg", "id": 2},
+    {"nombre": "Lac Fashion","marca":"Molli", "precio": 550, "img":"img/esmaltesiete.jpg","id": 3},
+    {"nombre": "Lac Candy","marca":"Molli", "precio": 550,"img":"img/esmalteocho.jpg","id": 4},
+    {"nombre": "Lac French","marca":"Molli", "precio": 550, "img":"img/esmaltenueve.jpg","id": 5},
+    {"nombre": "Lac Coconut","marca":"Molli", "precio": 550, "img":"img/esmaltecoconut.jpg","id": 6}
+
+]

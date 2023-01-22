@@ -9,7 +9,9 @@
   <meta name="description" content="unas,coloridas,manicure,diseno,givenchy,kenzo,cacharel,perfumes">
   <!-- Keywords -->
   <meta name="keywords" content="Los diseños de uñas mas pedidos esta primavera 2022">
-  <!-- link css bootstrap -->
+  <!-- link css TOASTIFY -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- link css BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- Fuentes de google fonts -->
@@ -20,6 +22,7 @@
   <title>Beauty</title>
   <!-- LOGO/FAVICOM -->
   <link rel="shortcut icon" href="img/favicon3.png">
+  <!-- LINK CSS MIS ESTILOS -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -87,6 +90,7 @@
               <path fill-rule="evenodd"
                 d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
             </svg></i>
+            <span id="numerito" class="numerito">0</span>
           </a>
         </li>
       </div>
@@ -135,8 +139,7 @@
               <a class="nav-link" href="items/iniciarsesion.html">Iniciar Sesion</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 COLECCION
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
@@ -173,386 +176,24 @@
       <h2 sm-p20px> Sentite como si estuvieras de vacaciones.</h2>
       <!-- estilo c -->
       <section class="section-c">
-        
+
         <div id="contenedorProductos" class="card row">
-          <!--   <a href="#">
-            <div class="img-container">
-              <img class="fotos-cuadradas11 zoom" src="../img/esmaltesveranopasteles.jpg"
-                alt="Esmaltes colores pasteles rosa celeste y amarillo latte">
-              <span class="promo">15% de descuento</span>
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Esmaltes: amarillo, rosa y celeste</p>
-            <strong>$329,99</strong>
-            <a href="#" class="add-cart">Añadir al carrito</a>
-            <button class="add-cart">Añadir al carrito</button>
-          </div> -->
         </div>
-        <!--  
-         
-      </section> -->
-        <!-- segunda section -->
-        <!--  <section class="section-c">
-       
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img src="../img/unascombinacionveranobe.jpg"
-                alt="Juga con los colores del verano y crea tus propios diseños">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$199,99</strong>
-            <a href="#" class="add-cart">Añadir al carrito</a>
-          </div>
-        </div>
-      </section> -->
-        <!-- tercer seccion -->
-        <!--  <div class="divspan">
-        <span class="span1">No importa dónde, lleva estos colores para que vivas de buen ánimo desde la punta de
-          tus
-          dedos
-          hasta tu mente.</span>
-      </div>
-      <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <img class="fotos-beauty1 efecto" src="../img/unasazulbe.jpg" alt="Esmalte de uñas celeste pastel be">
-          </a>
-          <div class="info-container">
-            <p>Esmalte color pastel</p>
-            <strong>$229,99</strong>
-          </div>
-        </div>
-      </section> -->
-        <!-- cuarta seccion -->
-        <!--   <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty" src="../img/unasmetalizadasdecobe.jpg" alt="Esmaltes con glitter">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Esmaltes metalizados</p>
-            <strong>$249,99</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty" src="../img/unasmetalizada.jpg" alt="Esmalte metalizado tono plata">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$269,99</strong>
-          </div>
-        </div>
-      </section> -->
-        <!-- quinta seccion -->
-        <!--   <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <img class="fotos-beauty1 efecto" src="../img/unasesmalte-metalizado-efecto-espejo.jpg"
-              alt="Esmaltes de uñas metalizados efecto espejo">
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$200,00 cada uno</strong>
-          </div>
-        </div>
-     -->
-    </section>
 
-        <h3 class="texto3">¿Qué perfume va bien con tu personalidad?</h3>
-
-        <!-- sexta seccion perfumes -->
-        <section class="section-c">
-
-          <!--  <a href="#">
-            <img class="fotos-beauty1 efecto" src="../img/parfumairdigioia-acquadigioia-sundigioia.jpg"
-              alt="Perfumes acqua digioia">
-          </a>
-          <div class="info-container">
-            <p>Llevate dos por</p>
-            <strong>$25.000</strong>
-          </div> -->
-        </section>
-        <!-- septima seccion -->
-        <!--  <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2 " src="../img/parfunarmaniocean.jpg"
-                alt="Perfume Ocean di Gioia by Giorgo Armani">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Giorgio Ocean 100ml</p>
-            <strong>$27.500</strong>
-          </div>
-        </div>
       </section>
 
-      <div class="pagina-principal">
-        <figure class="figure">
-          <img class="fotos-beauty1 efecto" src="../img/beauty-maxmixbvlgary.jpg" alt="COLECCION">
-          <div class="strong1">
-            <p>Perfume Ocean di Gioia by Giorgo Armani</p>
-            <strong>$27.500</strong>
-          </div>
-        </figure>
-      </div>
-      <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty" src="../img/beauty-parfumbvlgariomnia-pink-sapphire-2.jpg"
-                alt="Perfume Bvlgari Omnia by Mary Katrantzou 40 ml">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Omnia Pink 100ml</p>
-            <strong>$33.850</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2" src="../img/beauty-parfumomnia-pink-sapphire.jpg"
-                alt="Perfume Bvlgari Pink Sapphire 40 ml">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Omnia Sapphire 100 ml</p>
-            <strong>$31.500</strong>
-          </div>
-        </div>
-      </section> -->
-        <!-- otra seccion -->
-        <!--  <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2 zoom" src="../img/beauty-parfumbvlgariomnia-by-mary-katrantzou.jpg"
-                alt="Perfume Bulgari Omnia eau de toilette">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$27.500</strong>
-          </div>
-        </div> -->
-        <!--  <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty zoom" src="../img/beauty-parfumbvlgariomniacrystaline-eau-de-toilette.jpg"
-                alt="Perfume Omnia Bulgari Cristal">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$27.500</strong>
-          </div>
-        </div> -->
-        <!--  <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2 zoom" src="../img/beauty-parfumbvlgariomnia-eau-de-toilette.jpg"
-                alt="Perfume Bulgari Omnia 50 ml">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$27.500</strong>
-          </div>
-        </div> -->
-      </section>
+      <h3 class="texto3">¿Qué perfume va bien con tu personalidad?</h3>
 
-      <!--    <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2" src="../img/beauty-parfumcacharel.jpg" alt="Perfume clasico Cacharel">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Cacharel Classic</p>
-            <strong>$27.500</strong>
-          </div>
-        </div>
-      </section>  -->
-      <!-- other more section Kenzo-->
-      <!-- <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2" src="../img/beauty-flower--by-kenzo-eau-de-vie-eau-de-parfum.jpg"
-                alt="Perfume Flower by Kenzo">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Flower Kenzo 100 ml</p>
-            <strong>$23.200</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2" src="../img/beauty-kenzo.jpg" alt="Perfume by Kenzo">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos de 50 ml</p>
-            <strong>$19.999</strong>
-          </div>
-        </div>
-      </section> -->
-      <!-- another seccion -->
-      <!--  <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty" src="../img/beauty-myway-giorgio.jpg" alt="Nuevo perfume Giorgio Armany">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>My Way by Giorgio Armani</p>
-            <strong>$36.600</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty imagen" src="../img/beauty-parfumbeigecalvin.jpg" alt="COLECCION">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Calvin Klein Women</p>
-            <strong>$27.500</strong>
-          </div>
-        </div>
-      </section> -->
-      <!-- other more section givenchy -->
-      <!--   <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <img class="fotos-beauty efecto" src="../img/parfumgivenchybordo.jpg" alt="Perfume Givenchy Bordo">
-          </a>
-          <div class="info-container">
-            <p>Lleva dos de 50 ml por</p>
-            <strong>$29.990</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <img class="fotos-beauty efecto" src="../img/beauty-parfumlinterditrojogivenchy.jpg"
-              alt="Perfume L interdit Rojo Givenchy">
-          </a>
-          <div class="info-container">
-            <p>Fire L`Intedit by Givenchy 50ml </p>
-            <strong>$27.500</strong>
-          </div>
-        </div>
-      </section> -->
-      <!-- other more section interdit de Givenchy-->
-      <!--    <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty1" src="../img/parfumlinterdit.jpg" alt="Perfume L interdit de Givenchy">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>50 ml</p>
-            <strong>$27.500</strong>
-          </div>
-        </div>
-      </section>
+      <h3>API local</h3>
 
       <section class="section-c">
-        <figure class="figure">
-          <img class="fotos-beauty1 imagen" src="../img/beauty-parfumfragancias-de-Lacoste.jpg" alt="Perfume Lacoste">
-          <div class="strong1">
-            <p>Perfume Lacoste</p>
-            <strong>$22.500</strong>
-          </div>
-        </figure>
-      </section> -->
-      <!-- other more section -->
-      <!--    <section class="section-c">
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty" src="../img/jabonesnaturalmenteartesanales.jpg"
-                alt="Perfume Bvlgari Omnia by Mary Katrantzou 40 ml">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Lleva dos</p>
-            <strong>$500,00 cada uno</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty2" src="../img/jabon-casero-de-romero-creative-family.jpg"
-                alt="Perfume Bvlgari Pink Sapphire 40 ml">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Jabon de Romero</p>
-            <strong>$700</strong>
-          </div>
-        </div>
-      </section>
-      <figure class="figure">
-        <img class="fotos-beauty1 imagen" src="../img/jabondeolivas.jpg" alt="Perfume Lacoste">
-        <div class="strong1">
-          <p>Jabon de Olivas </p>
-          <strong>$700</strong>
-        </div>
-      </figure>
-      <section class="section-c">
-         <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty imagen" src="../img/jabon-de-romero.jpg" alt="COLECCION">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Jabon de Romero con esencia de olivas</p>
-            <strong>$750</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty" src="../img/jabonesartesanales.jpg" alt="Nuevo perfume Giorgio Armany">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Jabones para regalar</p>
-            <strong>$350 cada uno</strong>
-          </div>
-        </div>
-        <div class="card estilo-c">
-          <a href="#">
-            <div class="img-container">
-              <img class="fotos-beauty imagen" src="../img/jabonnaturalrosa.jpg" alt="COLECCION">
-            </div>
-          </a>
-          <div class="info-container">
-            <p>Jabon natural con aroma de rosas</p>
-            <strong>3x $600 de 30 mg cada uno</strong>
-          </div>
-        </div>
-      </section>
-    </div> -->
 
-      <h1>Carrito de Compras</h1>
+        <div id="listadoJson" class="card row"></div>
+
+      </section>
+
+
+      <!--    <h1>Carrito de Compras</h1>
 
       <button class="add-cart" id="verCarrito">Ver Carrito</button>
       <button class="add-cart" id="vaciarCarrito">Vaciar Carrito</button>
@@ -560,7 +201,7 @@
       <h3>Total de la compra: <span id="totalCompra">0</span></h3>
 
       <div class="row" id="contenedorCarrito"></div>
-
+ -->
       <a class="fab fa-whatsapp" href="https://bit.ly/3AdCBD0" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path
@@ -670,10 +311,20 @@
       Be-todos los derechos reservados.
     </p>
   </footer>
+
+  <!-- link js Luxon -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+  <!-- link js toastify -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!--link sweet alert js  -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- LINK JS BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
-  <script src="./index.js"></script>
+  <!-- LINK JS PROPIO -->
+  <script src="./js/carrito.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
